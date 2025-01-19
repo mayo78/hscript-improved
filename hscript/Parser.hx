@@ -60,10 +60,10 @@ class Parser {
 	/**
 		allows to check for #if / #else in code
 	**/
-	public var preprocesorValues : Map<String,Dynamic> = new Map();
+	public var preprocessorValues : Map<String,Dynamic> = new Map();
 
 	/**
-		activate JSON compatiblity
+		activate JSON compatibility
 	**/
 	public var allowJSON : Bool;
 
@@ -2094,4 +2094,7 @@ class Parser {
 		}
 	}
 
+	@:noCompletion public var preprocesorValues(get,set) : Map<String,Dynamic>;
+	inline function get_preprocesorValues() return this.preprocessorValues;
+	inline function set_preprocesorValues(v) return this.preprocessorValues = v;
 }
