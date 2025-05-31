@@ -22,8 +22,6 @@
 package hscript;
 import hscript.Expr;
 
-using StringTools;
-
 class Printer {
 
 	var buf : StringBuf;

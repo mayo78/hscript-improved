@@ -24,6 +24,8 @@ package hscript;
 
 import hscript.Expr;
 
+using StringTools;
+
 enum Token {
 	TEof;
 	TConst(c:Const);
