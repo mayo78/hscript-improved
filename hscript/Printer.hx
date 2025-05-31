@@ -357,6 +357,7 @@ class Printer {
 			case EUnexpected(s): "Unexpected token: \""+s+"\"";
 			case EUnterminatedString: "Unterminated string";
 			case EUnterminatedComment: "Unterminated comment";
+			case EEmptyExpression: "Expression cannot be empty";
 			case EInvalidPreprocessor(str): "Invalid preprocessor (" + str + ")";
 			case EUnknownVariable(v): "Unknown variable: "+v;
 			case EInvalidIterator(v): "Invalid iterator: "+v;
